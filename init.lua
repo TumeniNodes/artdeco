@@ -1,4 +1,4 @@
--- ArtDeco (1.0) by TumeniNodes
+-- ArtDeco (1.1) by TumeniNodes
 
 minetest.register_node("artdeco:lionheart", {
 	description = "ArtDeco lionheart",
