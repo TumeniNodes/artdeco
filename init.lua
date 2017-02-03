@@ -1064,15 +1064,11 @@ minetest.register_node("artdeco:ceilingtile", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-doors.register_door("artdeco:estatedoor", {
+doors.register("artdeco:estatedoor", {
 	description = "ArtDeco estate door",
-	drawtype = "nodebox",
 	inventory_image = "artdeco_estatedoor_inv.png",
-	tiles_bottom = {"artdeco_estatedoor_bottom.png", "artdeco_estatedoor_edge.png"},
-	tiles_top = {"artdeco_estatedoor_top.png", "artdeco_estatedoor_edge.png"},
-	use_texture_alpha = true,
-	paramtype = "light",
+	tiles = {{ name = "artdeco_estate_door.png", backface_culling = true }},
 	groups = {choppy=2,cracky=2,door=1},
-	only_placer_can_open = false,
-	sounds = default.node_sound_stone_defaults(),
+ 	protected = false,
+sounds = default.node_sound_stone_defaults(),
 })
